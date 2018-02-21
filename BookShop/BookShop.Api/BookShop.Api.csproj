@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Infrastructure\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -19,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookShop.Data\BookShop.Data.csproj" />
+    <ProjectReference Include="..\BookShop.Services\BookShop.Services.csproj" />
   </ItemGroup>
 
 </Project>

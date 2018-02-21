@@ -1,5 +1,6 @@
 ﻿namespace BookShop.Api
 {
+    using BookShop.Api.Infrastructure.Extensions;
     using Data;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,8 @@
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDatabaseMigration();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
