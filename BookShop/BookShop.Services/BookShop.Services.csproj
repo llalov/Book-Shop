@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementations\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\BookShop.Common\BookShop.Common.csproj" />
     <ProjectReference Include="..\BookShop.Data\BookShop.Data.csproj" />
   </ItemGroup>
 
